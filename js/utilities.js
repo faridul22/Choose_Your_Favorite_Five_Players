@@ -5,6 +5,14 @@ function getInputValue(inputId) {
     return inputNumber;
 };
 
+// error handler
+function errorMessage(inputId) {
+    const inputValue = getInputValue(inputId);
+    if (inputValue < 0 || isNaN(inputValue)) {
+        alert('Please enter a valid input numbar');
+        return;
+    }
+}
 
 function displayInnerText(elementId, value) {
     const element = document.getElementById(elementId);

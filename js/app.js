@@ -44,14 +44,3 @@ document.getElementById('total-expenses-btn').addEventListener('click', function
     const totalExpenses = totalPlayerExpensesAmount + managerExpenses + coachExpenses;
     displayInnerText('total-expenses', totalExpenses);
 })
-
-
-
-// error handler
-function errorMessage(inputId) {
-    const inputValue = getInputValue(inputId);
-    if (inputValue < 0 || isNaN(inputValue)) {
-        alert('Please enter a valid input numbar');
-        return;
-    }
-}

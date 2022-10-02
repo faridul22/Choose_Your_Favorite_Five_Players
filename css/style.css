@@ -7,3 +7,7 @@ h1 {
 .btn-color {
     background-color: #015196;
 }
+
+#selected-player-name {
+    height: 500px;
+}
