@@ -159,7 +159,54 @@
                 </div>
             </div>
             <!-- Site nav start -->
+            <aside class="ms-4 w-50">
+                <!-- selected player list -->
+                <section class="bg-black text-white mb-4 pb-5 pt-4">
+                    <h6 class="text-center">Selected-five</h6>
+                    <ol id="selected-players" class="g-5">
 
+                    </ol>
+                </section>
+                <!-- calculate expenses -->
+                <section class="bg-black text-light">
+                    <h5 class="text-center p-3">Budget</h5>
+                    <!-- only player expenses calculate -->
+                    <div>
+                        <div>
+                            <small class="ps-3 me-3">Per Player</small>
+                            <input class="bg-black border-white w-50 text-light" type="text" name=""
+                                id="per-player-expenses" value="1000">
+                        </div>
+                        <div class="text-center p-4">
+                            <button id="calculate-btn"
+                                class="text-white btn-color p-1 text-center w-100">Calculate</button>
+                        </div>
+                    </div>
+                    <!-- total expenses calculate -->
+                    <div>
+                        <p><small class="ps-3 me-3">Player Expenses</small>$<span id="total-player-expenses">5000</span>
+                        </p>
+                        <div class="my-3">
+                            <small class="ps-2 me-2">Manager</small>
+                            <input id="manager-expenses" class="bg-black border-white w-50 text-white" type="text"
+                                name="" value="2000">
+                        </div>
+                        <div class="my-3">
+                            <small class="ps-2 me-4">Coach</small>
+                            <input id="coach-expenses" class="bg-black border-white w-50 text-white" type="text" name=""
+                                value="4000">
+                        </div>
+                        <div class="text-center p-2">
+                            <button id="total-expenses-btn"
+                                class="text-white btn-color p-1 text-center w-100">Calculate</button>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <p>total</p>
+                            <p class="text-danger">$<span id="total-expenses">11000</span></p>
+                        </div>
+                    </div>
+                </section>
+            </aside>
         </section>
     </main>
 
